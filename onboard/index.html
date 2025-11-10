@@ -1,0 +1,526 @@
+<!--
+WHY ARE YOU SNOOOPING AROUND MY DOCUMENT, YOU FUCKING SNOOPERS!
+YOU SHOULD BE THANKING GOD I DON'T REPLY to the HTTP requests with a BINARY file to make your browser WISH IT WAS A TEAPOT! THAT WOULD NOT BE A HARDSHIP!
+
+⣿⡹⣏⡿⣹⢏⣿⡹⣏⢿⣹⢏⡿⣹⣏⢿⡹⣏⡿⣹⢏⣿⡹⣏⢿⣹⢏⣿⣹⣿⣿⣿⣿⣿⠛⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⡷⣝⣳⡽⣫⢟⡶⣻⢭⡟⣮⡻⣝⣳⡞⣯⢽⡳⣝⣯⣛⡶⣻⢭⡟⣮⢟⡶⣫⣿⣯⣷⡿⠅⠈⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡹⣎⡷⣏⣟⠾⣭⢷⡻⣵⢻⣝⡶⣻⡝⣾⣹⣳⢮⢷⣹⡳⢯⡾⣝⡾⣹⣳⣿⡿⣽⠋⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣷⣹⡽⣺⡝⣞⣯⠽⣞⣳⡽⣫⠾⣵⣻⢼⠓⠇⢙⣋⠚⡷⣽⢻⣼⢳⡽⣳⢧⣿⡿⠇⠀⠀⠀⢀⣾⣿⣿⢿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣷⢣⣿⡱⣟⡽⣎⣿⣹⢎⡷⣏⠿⠑⠉⠀⠀⠀⠀⠉⠛⣌⣯⠷⣞⢯⣳⢟⡞⣿⠏⠀⠠⢀⣴⣿⣿⣿⣾⣿⣿⢿⣻⣷⣿⣿⣿⣿⣿⣿⣿⣿
+⣯⣛⡶⣻⢵⣛⡾⣖⢯⣯⣳⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣽⣻⢞⡽⣮⣛⠾⡟⢀⠎⣠⠞⠉⠀⠉⢷⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋
+⡷⣭⢷⣫⢟⣼⣳⢏⣯⡿⠁⠀⠀⠀⠀⠀⠀⠀⣀⣴⡾⣿⣿⠟⠈⠁⠀⠀⣰⠠⠚⠞⠋⠀⠃⢄⡠⠠⠻⣾⣿⣽⣿⣷⣿⡿⠝⠋⠁⠀⠀⠀
+⡿⣼⢳⣏⣟⣮⣞⡿⠟⠁⠀⠀⠀⠀⠌⢀⣴⣿⣻⣷⣿⣿⡟⡀⠀⠀⠈⠁⠀⠀⠀⠀⠀⡸⢴⢃⠀⡑⢀⡘⠻⣿⠷⠋⠁⡀⠀⠄⠀⠀⠀⠀
+⡿⣼⣳⣯⢟⣶⡽⠁⠀⠀⠀⠀⠀⢂⣤⣿⣿⣿⣿⣿⣿⡿⡁⠁⠁⠀⠀⠀⠀⠀⢀⡤⠀⠡⠀⠁⠀⠀⠀⠙⢦⠈⠢⣀⣠⣤⣴⣶⣶⣿⣾⣿
+⣿⡻⢧⣛⣾⠋⠀⢀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡟⠋⠀⠀⠀⢀⠔⠀⣀⡐⠩⠀⠀⠲⠀⠂⠀⠀⠀⠀⠈⢆⠀⠘⢿⣿⡿⣿⣿⣿⣿⣿
+⣯⢽⢯⡽⠡⠀⠀⢤⠀⢀⠒⢀⠋⢛⣿⣿⣿⣿⣿⠛⠁⠀⠀⠁⡠⠀⢀⡴⠋⠀⠀⠂⣄⠃⠀⠀⠀⠰⠀⠀⠀⠈⡀⠀⠀⠹⣿⣿⡿⣷⣿⣿
+⣟⢮⣯⠁⡁⠀⢠⠀⠀⠌⠀⢸⣴⣾⣿⣿⣿⡿⠁⠀⠀⠀⢠⠎⠀⡰⠕⠀⢀⠔⢀⢌⠄⠀⠀⠀⠀⠀⠀⢀⡀⠀⠁⠀⣠⠀⢙⣿⣿⣿⡿⣿
+⣯⣳⡇⡄⠃⣆⠸⠀⠈⠀⢠⣼⣿⣿⣿⡿⡾⠁⠀⢄⠂⠠⠁⠀⠜⠀⢀⠔⠁⡴⡫⡚⣀⠀⠀⠠⢚⢀⡠⢌⡁⡈⢰⠀⣀⡄⠀⠘⣿⣿⣿⣿
+⡷⣭⣇⠆⠈⠣⠈⡆⠀⠀⠿⢛⡿⢹⡿⠷⠁⠀⠐⡆⢀⠁⠀⠎⡠⠐⠁⣠⢾⠕⢡⠃⢻⣧⡀⠠⡄⢈⣡⡿⡇⡅⠈⡀⡉⠘⡀⠐⢹⣿⣷⣿
+⣟⢶⡿⡆⢠⠀⠀⣥⠀⠀⢀⡜⡇⠞⠀⢣⠀⠀⠀⠀⡘⡌⡜⢊⡠⢖⡿⠛⠁⠒⣾⠛⡉⢉⣿⣼⣿⠛⢭⠆⢇⡆⠀⠆⡁⠀⠐⢀⡆⣿⣿⢿
+⣟⡮⣟⣿⣤⡀⢀⡿⠀⠀⠀⡃⢽⠀⢠⢼⠂⠀⠀⠀⡇⢹⡿⣷⣤⣁⠠⠀⠀⠀⣿⣴⡿⠛⣽⠻⣦⣿⡏⠀⡘⠁⢀⠃⠃⠀⠀⠙⢁⢸⣿⣿
+⡿⢼⡳⣮⣛⣷⣘⠃⠀⠀⣀⣹⠘⡇⢐⣺⠁⠀⠀⠀⢳⢈⠳⠞⣉⣏⢻⣦⣌⠰⠉⠛⠐⠿⠁⠞⡻⠃⠀⢠⠉⡇⢨⠀⠀⠀⠀⠀⢸⢸⣿⣿
+⣉⡤⡤⠹⠼⠉⠁⠀⠀⠀⠀⣿⠇⠹⣹⠼⡿⠀⠀⠀⢸⢿⠀⠀⢁⠸⠁⠸⠈⠇⠀⠀⠀⠀⠀⠤⠀⠠⢤⡀⠀⢄⡿⠀⠀⠀⠀⠀⠈⢸⣿⣹
+⠃⠀⠂⠀⠀⠀⠀⠀⠀⣀⣴⣻⡟⡴⢈⣵⣿⡵⡀⠀⠈⡄⠀⠀⣾⠄⠀⠀⠀⠀⠀⠀⠀⠀⠼⠷⡛⢻⠋⠛⢻⣾⠇⡀⠀⠀⠀⠀⣿⢸⣿⣿
+⠔⠈⠀⢀⣄⡴⣾⢻⡟⣽⣫⢟⡽⣷⣢⠙⣿⡈⠿⣶⣀⠑⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠶⣩⡷⠂⠀⠀⠀⠀⢰⡿⣼⣿⣽
+⠀⠀⣰⡏⡾⣝⣳⢯⡽⣣⢯⢯⡽⣞⡽⣻⣾⣇⠀⠈⠻⡈⠉⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠟⠀⠀⠀⡠⠠⢃⣿⣧⣿⣯⣿
+⠀⢰⣯⢧⣟⡽⢮⣗⣻⡭⣟⠾⣵⣻⣼⠿⣝⡿⠀⠀⠀⠌⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠠⢤⣅⣄⣀⣆⣤⠞⣡⣿⣿⣿⢯⣷⣿
+⣄⢸⣞⡿⣼⣹⢏⡾⣵⣛⣞⢯⣳⣯⣏⢿⣯⢿⠁⠄⡇⠘⣣⢡⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠂⠀⢘⣿⣋⣤⣶⢿⣽⢿⡽⣟⣿⢾
+⣟⣳⢯⣟⡼⢧⡿⣹⢶⡻⣼⢫⣗⠿⣼⣫⡞⠏⠐⡀⢡⣲⡝⣌⠀⣵⣤⠀⠀⠀⠀⢀⢀⣄⡴⣾⢟⠀⠀⠀⠈⠹⣿⡽⣞⡿⣞⣿⣻⢿⣽⣿
+⡿⣼⢳⢾⣹⡻⣼⢏⡷⣏⡷⣛⣮⢟⣧⠏⠹⡆⣰⡏⠀⠀⢀⢀⡈⠽⠞⠋⠓⠒⠳⢯⣛⡼⢣⣏⢯⣇⣂⠀⠀⠈⣞⣽⣯⢿⡽⣞⡿⣯⣷⢿
+⡿⣜⡯⣗⢯⣳⢯⠾⣝⡾⣹⡽⣎⣟⠎⢀⡀⠹⠶⠵⠤⠂⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣽⢳⣎⠷⣭⢻⣧⠀⠀⢸⣿⣞⣯⣟⣯⢿⣳⣯⣿
+⣿⡱⣟⠾⣭⢷⣫⢿⣹⢞⣳⡽⠚⠉⠉⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢻⡳⣎⠿⣜⣧⢻⣅⠀⣼⣻⣞⣷⣻⣞⡿⣽⣳⢿
+⡷⡽⣭⢿⣹⡞⣵⡻⣎⣿⡱⠁⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⢠⠁⠀⠀⠀⠀⠀⠀⠀⠀⡷⣭⢻⡜⣾⢯⣥⡾⢯⡷⣞⣷⣻⢾⡽⣯⣟⣿
+⣿⣱⢟⣮⢷⣹⣳⢽⡳⢾⡍⠀⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠃⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⣜⢧⡻⣜⢯⡞⣽⡻⣼⣻⡼⢯⡿⣽⣳⣟⣾
+⣷⡹⣞⢧⣯⣳⢽⡺⡽⣧⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⡘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠈⢯⡳⣝⢮⡽⣞⡽⣣⢿⣹⢯⣟⣷⣻⢾⣽
+⣷⢫⡽⣞⣵⣫⠾⣝⣳⢯⠀⠀⠀⠀⠀⡀⠀⡄⠀⠀⠀⠀⢠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠉⠛⠮⣷⣹⢞⣽⣫⢯⣟⡾⣵⢯⣟⡾
+⣯⢏⡷⣏⡶⣏⡿⣭⠷⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠃⠀⠀⠀⠀⠀⠀⠀⠉⠻⣶⣏⡷⢯⡾⣽⣻⢾⡽
+⣟⢾⣹⡞⣽⢞⡵⣏⡿⣥⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⢯⢿⣽⣯⣽⢳⣯⢯⣟
+⣟⡮⢷⣹⣏⡾⣽⢺⣵⢻⡆⠀⠀⠀⠀⠀⠐⠀⠀⠀⢀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣾⣤⣵⡿⣞⡿⣼⣻⢞
+⡿⡼⣏⡷⣞⣽⢺⣝⡮⣟⣽⡀⠀⠀⠀⠀⠀⢀⠀⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣯⣗⢯⣟
+⣿⣱⠿⣼⢳⡞⣯⡞⣵⡻⣖⢷⡀⠀⠀⠀⠀⠀⢀⢀⠃⠀⠀⠀⠀⠀⠀⠀⠀⣰⠁⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣞⣻⢞
+⡷⣭⢟⣧⢿⣹⢶⣛⣧⢟⡽⣞⣳⡀⠀⠀⠀⠀⠀⠜⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠀⠀⢀⣤⣾⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⡿⣜⣯⣻
+⡿⣼⢫⣞⢧⡟⣾⡹⣎⣟⠾⣵⣫⢷⣀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⣐⠀⠀⡀⢀⡤⠾⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣏⣷⣛⡶⢯
+⡿⣜⡿⣼⢫⣞⠷⣽⣹⢞⣯⣳⠽⣞⡽⣆⠀⢀⣸⠀⠀⠀⠀⠀⠀⠀⡰⠛⣺⣷⣾⣶⣶⣶⣦⣤⣤⣀⣉⠙⠻⢿⣿⡹⣞⡵⢯⡽⣖⡯⣽⢯
+⣿⡱⣟⣼⣛⣮⢟⡧⣟⢾⣱⣏⢿⣹⢞⣽⣻⡤⡇⠀⠀⠀⠀⠀⠀⠸⣷⣿⣿⣿⣿⣿⣟⣷⣻⣿⢧⣽⣻⣿⣷⣾⣳⠽⣮⢽⡻⣼⢳⡽⣣⣟
+⡷⣽⡹⣶⢫⡾⣝⡾⣹⣞⣳⢞⡯⣞⢯⡶⣏⣿⠃⠀⠀⠀⠀⠀⠀⠀⠈⠻⢿⣿⣿⣿⡽⣞⣷⣿⣿⣻⣿⣿⣿⣯⢳⣏⢷⣫⢗⣯⢻⣼⢳⡽
+⣟⢶⡻⡵⣯⢳⣻⢼⣳⠽⣎⣟⠾⣭⢷⡻⣜⡿⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⡿⣷⢾⣷⣟⣿⣿⣿⣚⠷⣮⢻⣜⢯⡞⡽⣎⡿⣼
+⣟⢾⡹⢷⣹⣏⢷⡻⣼⢻⣝⡞⣯⡽⣞⡽⣭⢷⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣽⢯⣟⣿⣾⡽⣿⣷⣭⢻⡜⣯⢞⣧⢻⡝⣾⡱⢯
+⣟⢾⣹⣏⠷⣞⢯⣳⢏⡿⣼⣹⢧⡟⡮⠽⠾⠧⢻⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣟⣾⣿⡽⣿⣽⣿⣮⢳⡻⣜⢯⡞⣧⢟⡶⣻⠽
+⣟⡮⢷⣺⢻⣝⡾⣹⢾⣹⢶⣛⠎⠁⠀⠀⠀⠀⠀⠙⢿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢯⣿⣿⣷⣻⣿⣿⢣⡟⣼⣣⢟⡼⣫⢞⡵⣻
+⡿⡼⣏⡷⣛⣮⡽⣳⢏⣷⢫⠇⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣷⣿⣿⡟⣼⢣⡟⣮⢳⣭⢻⣜⣳
+⣿⣱⢯⣳⢟⡶⣻⢵⡻⣎⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣻⣽⣿⣿⣦⣄⡀⠀⠀⠀⠀⠀⠀⠙⣿⡿⣿⣽⣿⡜⣧⢻⣜⡳⣎⠷⣎⠷
+⣷⡹⣞⢧⣟⣳⣭⢷⡻⢝⡢⠽⣄⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⣿⣷⡿⣿⠟⠿⠿⠶⣄⡀⠀⠀⠀⠀⠘⢿⣿⣿⣿⡜⣧⢻⣜⡳⣭⢻⣜⡻
+⣷⢫⡽⣞⢮⣷⡏⠟⠸⠣⠙⠉⠌⢳⣤⣤⣤⣤⣶⣿⣿⣿⡿⠟⠋⠉⠁⠀⠀⠀⠀⠀⠙⣿⣷⢄⠀⠀⠀⠈⢶⠛⣿⡾⣱⢏⣮⢳⣭⢳⣎⠷
+⣯⢏⣷⠟⡃⠈⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⠿⠋⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣟⠀⠀⠀⠀⠀⠈⣃⠈⢿⡱⣏⣞⢳⡎⡷⢎⡟
+⣟⡾⡡⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠟⡁⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠐⣆⢸⣟⡼⢎⡷⣹⢭⡻⣜
+⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⡟⠡⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠐⢾⣿⡜⣯⡜⢧⡳⣝⢮
+⢡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠇⡀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡸⣤⢹⢇⡿⣸⡌
+⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢋⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠈⡄⠀⠉⢚⣧⡛⣼⡱⢞
+⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠗⡨⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢘⡃⠀⠀⠀⡀⠀⢘⡇⠀⢿⣦⠀⠀⣶⠻⣔⢯⡹
+⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡿⡩⢄⠡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠰⣬⠧⠀⠀⡜⠀⠀⣽⠀⠀⣻⣞⣧⠀⣯⢟⡼⢎⡳
+⡇⢀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡷⡓⡄⢂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠐⣠⢳⡾⠃⠀⡸⠁⠀⣸⣹⠃⠀⣼⡱⣞⢧⡝⣎⡞⣭⢳
+⡇⣀⠂⠄⡀⢀⠀⡀⢀⠀⢾⣱⡝⡰⢀⠂⢀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠄⢂⢡⢒⡭⣖⡟⠃⢀⠄⢀⡠⠞⡱⢾⠀⣐⠢⡕⢮⡻⣝⠶⣙⠶⣭
+⣇⠰⡈⠔⣀⠂⡐⡀⠆⣌⢹⡷⣎⡕⢂⠌⠠⢀⠂⠐⢈⠠⢈⠐⠠⡁⣜⢢⣏⣾⣽⡿⠖⠙⠒⠂⠁⠀⣜⣱⠇⠐⠂⡰⢩⠳⣝⣯⢏⣝⡺⢴
+⢆⢣⡙⠲⣄⢳⡰⣱⢚⡴⣫⣿⡞⣜⠢⡌⣁⠂⠌⡐⠄⡒⠤⡉⢖⡱⣮⣟⡾⠟⠉⠀⠀⠀⠀⠀⠠⣘⠴⣻⠊⠁⠀⠥⣋⡝⢮⣟⢼⢲⣙⢮
+⡈⢆⠩⢓⢬⢣⡳⣵⢫⣞⣵⣻⣿⣭⠳⡔⢢⢉⠔⡈⢆⡑⢢⠙⡌⠓⠁⠁⠰⠘⠀⠀⠀⠀⠀⣀⠳⣌⠿⠁⠀⠀⡘⢰⢣⠞⣧⡟⣎⢳⢎⡞
+⡿⡍⠒⠉⠎⠃⠇⠩⠛⡘⠃⠛⢻⢿⣯⡝⢦⣉⠦⣑⠢⡈⠄⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠤⠛⠈⠀⠀⢀⠂⢥⠣⣏⡻⡴⣟⡬⢳⢎⡽
+⢳⡌⡐⠀⠀⠀⠀⠀⠀⠀⠀⢄⡘⢮⠽⣿⣳⢎⡳⣌⢳⡘⣤⢃⡌⡰⣀⠂⡄⢠⡀⢤⠐⠈⠁⠀⠀⠀⢀⢀⠢⣘⢦⡛⣶⡹⡵⣿⠸⣍⡞⡼
+⢧⡒⢥⢊⠔⡀⡀⢠⠀⢆⡉⢦⣙⢮⡻⣽⣏⠍⠓⠫⠓⠛⠆⠛⠜⠱⠈⠁⠀⠀⠁⠀⠀⠀⠀⠀⢠⠐⡄⢎⣲⡱⢮⡝⣶⡹⣵⡿⣙⠦⣝⠼
+⡴⣙⣎⠮⡜⣥⢣⢣⡙⢦⣙⠶⣭⢞⣵⣣⣿⠬⡑⡄⢂⠄⠠⢀⠠⠀⠄⣀⠂⡐⢠⠠⣀⠠⢄⠣⣆⠽⣘⢧⢶⣹⢧⡻⢶⡹⢾⡵⣩⢞⡬⣛
+⣷⣙⠬⣻⠵⣎⢷⣫⡝⣧⢏⡿⣼⢫⣶⢳⣻⣇⠳⣜⠢⣌⠱⣂⠥⣉⠲⣀⠧⡘⢦⠱⣌⡓⣎⡳⣜⢯⡝⣮⡟⣼⡳⣏⢷⡹⣟⢧⡓⢮⠖⣭
+⣷⢫⣟⡁⠐⠛⠒⠓⠚⠓⠛⠈⠉⢿⣉⣧⣉⣾⡹⣬⢳⡬⢳⡱⢎⡵⢣⣓⢮⣙⡎⢷⡸⣵⢫⡵⣫⣞⡽⣣⡟⣧⢟⡼⣣⢻⡟⢦⣋⢧⡛⣖
+⣯⣛⣾⡟⣍⢫⡙⣙⢋⡛⣹⢛⡿⢯⡿⣽⡻⣷⡇⢯⡳⣝⢧⢯⡝⣮⢳⡭⢶⡹⣞⢧⡻⣜⣧⢻⡵⣺⠵⣯⡝⣮⣛⠼⡱⣿⡙⢶⡩⢶⡹⢬
+⣷⡹⣞⣟⣾⡱⣜⡜⣮⢵⣫⢯⡟⣯⣽⢳⡟⣵⣟⢣⡟⣼⢫⡞⡽⣎⣷⣹⡳⡽⣎⡷⣫⢗⡾⣹⢞⡵⣛⠶⣙⢦⡙⠮⣽⢧⡹⢖⣹⢲⡙⢮
+⣷⢫⣗⢯⣧⣻⡜⡽⢪⠷⣹⠮⣝⡳⣎⠿⣼⢳⣻⡥⢞⡭⣗⢯⡳⣏⣶⢳⣝⣳⡝⣾⡹⣎⢷⡹⣎⡳⣍⢻⡘⢦⣙⣼⡏⢶⡙⣮⢱⢣⢏⡳
+### NOW GO FUCK YOURSELF IF YOU CAN BE SO KIND! LOVE YA! 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Portal - Vain Bridge Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .access-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .access-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #0078d4, #00bcf2, #ff6b6b, #00bcf2, #0078d4);
+        }
+        
+        .logo-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .logo-section h1 {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0078d4 0%, #00bcf2 50%, #0078d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .logo-section .subtitle {
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .access-form {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #1a365d;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e1e4e8;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #0078d4;
+            box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.1);
+        }
+        
+        .error-message {
+            background: linear-gradient(135deg, #fff4e5 0%, #ffeaa7 100%);
+            border: 2px solid #f39c12;
+            border-left: 4px solid #f39c12;
+            color: #d68910;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            display: none;
+            animation: shake 0.5s ease;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #0078d4 0%, #00bcf2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 120, 212, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .document-links {
+            display: none;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e1e4e8;
+        }
+        
+        .document-links.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .document-links h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .document-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+            border: 2px solid #e1e4e8;
+            border-left: 4px solid #0078d4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .document-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 120, 212, 0.15);
+            border-left-color: #00bcf2;
+        }
+        
+        .document-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .document-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 6px;
+            background: linear-gradient(135deg, #0078d4, #00bcf2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .document-card-description {
+            font-size: 13px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .footer-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #718096;
+        }
+        
+        .logout-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #e1e4e8;
+            border-radius: 8px;
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .logout-btn:hover {
+            border-color: #f39c12;
+            color: #d68910;
+            background: #fff4e5;
+        }
+        
+        .success-message {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border: 2px solid #4caf50;
+            border-left: 4px solid #4caf50;
+            color: #2e7d32;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="access-container">
+        <div class="logo-section">
+            <h1>Vain Bridge</h1>
+            <div class="subtitle">Documentation Access Portal</div>
+        </div>
+        
+        <div id="accessForm" class="access-form">
+            <div class="error-message" id="errorMessage">
+                <strong>⚠️ Access Denied:</strong> The passphrase you entered is incorrect. Please try again.
+            </div>
+            
+            <div class="form-group">
+                <label for="passphrase">Enter Passphrase</label>
+                <input 
+                    type="password" 
+                    id="passphrase" 
+                    name="passphrase" 
+                    placeholder="Enter your access passphrase"
+                    autocomplete="off"
+                    autofocus
+                >
+            </div>
+            
+            <button type="button" class="submit-btn" onclick="checkAccess()">
+                Access Documents
+            </button>
+        </div>
+        
+        <div id="documentLinks" class="document-links">
+            <div class="success-message show" id="successMessage">
+                <strong>✓ Access Granted:</strong> You now have access to the documentation.
+            </div>
+            
+            <h2>Available Documents</h2>
+            
+            <a href="quickstart-pamphlet.html" class="document-card">
+                <div class="document-card-title">Onboarding Guide</div>
+                <div class="document-card-description">
+                    Windows Cloud PC & Azure Tenant setup instructions, architecture diagrams, and comprehensive reference materials.
+                </div>
+            </a>
+            
+            <a href="slideshow-presentation.html" class="document-card">
+                <div class="document-card-title">Presentation Slideshow</div>
+                <div class="document-card-description">
+                    Interactive presentation slides covering Microsoft 365 multi-tenant architecture and services overview.
+                </div>
+            </a>
+            
+            <button type="button" class="logout-btn" onclick="logout()">
+                Logout & Lock Access
+            </button>
+            
+            <div class="footer-info">
+                Managed by CITRE<br>
+                <span style="opacity: 0.7;">vainbridge.com</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Configuration - Change this passphrase to your desired access code
+        const CORRECT_PASSPHRASE = 'VainBridge2025';
+        
+        // Check if user is already authenticated
+        function checkAuthStatus() {
+            const authStatus = sessionStorage.getItem('authenticated');
+            const authTime = sessionStorage.getItem('authTime');
+            const currentTime = Date.now();
+            
+            // Session expires after 8 hours
+            const SESSION_DURATION = 8 * 60 * 60 * 1000;
+            
+            if (authStatus === 'true' && authTime) {
+                if (currentTime - parseInt(authTime) < SESSION_DURATION) {
+                    showDocuments();
+                    return true;
+                } else {
+                    // Session expired
+                    sessionStorage.removeItem('authenticated');
+                    sessionStorage.removeItem('authTime');
+                }
+            }
+            return false;
+        }
+        
+        // Check access when form is submitted
+        function checkAccess() {
+            const passphraseInput = document.getElementById('passphrase');
+            const passphrase = passphraseInput.value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Clear previous error
+            errorMessage.classList.remove('show');
+            
+            if (!passphrase) {
+                errorMessage.textContent = '⚠️ Please enter a passphrase.';
+                errorMessage.classList.add('show');
+                passphraseInput.focus();
+                return;
+            }
+            
+            // Check passphrase (case-insensitive comparison)
+            if (passphrase.toLowerCase() === CORRECT_PASSPHRASE.toLowerCase()) {
+                // Store authentication status
+                sessionStorage.setItem('authenticated', 'true');
+                sessionStorage.setItem('authTime', Date.now().toString());
+                
+                // Show documents
+                showDocuments();
+            } else {
+                // Show error and shake animation
+                errorMessage.classList.add('show');
+                passphraseInput.value = '';
+                passphraseInput.focus();
+                
+                // Add shake effect to input
+                passphraseInput.style.animation = 'shake 0.5s ease';
+                setTimeout(() => {
+                    passphraseInput.style.animation = '';
+                }, 500);
+            }
+        }
+        
+        // Show document links
+        function showDocuments() {
+            const accessForm = document.getElementById('accessForm');
+            const documentLinks = document.getElementById('documentLinks');
+            
+            accessForm.style.display = 'none';
+            documentLinks.classList.add('show');
+        }
+        
+        // Logout function
+        function logout() {
+            sessionStorage.removeItem('authenticated');
+            sessionStorage.removeItem('authTime');
+            
+            const accessForm = document.getElementById('accessForm');
+            const documentLinks = document.getElementById('documentLinks');
+            const passphraseInput = document.getElementById('passphrase');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            documentLinks.classList.remove('show');
+            errorMessage.classList.remove('show');
+            accessForm.style.display = 'block';
+            passphraseInput.value = '';
+            passphraseInput.focus();
+        }
+        
+        // Allow Enter key to submit
+        document.addEventListener('DOMContentLoaded', function() {
+            const passphraseInput = document.getElementById('passphrase');
+            
+            passphraseInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    checkAccess();
+                }
+            });
+            
+            // Check if already authenticated
+            checkAuthStatus();
+        });
+        
+        // Prevent right-click and F12 (basic protection - can be bypassed)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            // Disable F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+            }
+            // Disable Ctrl+Shift+I (DevTools)
+            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+            }
+            // Disable Ctrl+Shift+J (Console)
+            if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+                e.preventDefault();
+            }
+            // Disable Ctrl+U (View Source)
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

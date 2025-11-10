@@ -1,0 +1,549 @@
+<!--
+WHY ARE YOU SNOOOPING AROUND MY DOCUMENT, YOU FUCKING SNOOPERS!
+YOU SHOULD BE THANKING GOD I DON'T REPLY to the HTTP requests with a BINARY file to make your browser WISH IT WAS A TEAPOT! THAT WOULD NOT BE A HARDSHIP!
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⣀⡴⠋⠀⠀⣸⣩⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠁⢠⣀⡀⠀⠀⢀⡞⣁⣄⠀⢀⣿⣿⣿⣿⣿⣿⣭⡙⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⠇⠉⠙⠒⣾⠋⠀⠀⠃⢸⣿⣿⣿⣿⣿⣿⣿⣿⡎⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⣼⠀⠀⠀⣸⠃⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⠿⢻⣿⣷⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⢎⡄⠀⢠⡏⠀⠀⠀⠀⢸⠿⣯⣍⠉⠁⣠⣤⣌⣿⣿⣾⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⢽⣿⣿⡄⣼⠁⠀⠀⠀⠀⣸⠀⠀⠁⠀⠀⠋⠀⢈⣿⣿⣟⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⠉⠀⡟⠀⠀⠀⠀⠀⡿⣆⣠⡆⢀⠀⡄⢠⡆⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡇⠀⠀⠀⠀⠀⡏⠈⠉⠂⠸⣄⡻⠞⢹⣿⣿⡟⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⢀⡇⢤⣄⣈⣃⣰⠃⢀⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⢸⣧⡀⠑⠭⢝⣩⣴⣿⣿⣿⣿⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⢸⣿⡿⠳⠟⣿⣿⣿⣿⣿⣿⡏⡏⠀⠀⠀⠀⠀⠀ ⠀  ⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⢸⣟⣧⡀⠀⢻⣿⣿⣿⣿⠻⢿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⢸⠹⡼⣿⠦⣄⣙⡿⢿⣿⣇⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣇⠀⠀⠀⠀⠈⠆⣿⡊⠳⣄⠉⠁⢀⠙⣟⡟⢓⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢷⣄⠂⠀⠀⠀⢸⡇⣱⢛⡷⣦⣀⡑⣼⣞⣷⣷⣽⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⣦⡀⠀⠈⣿⢹⣲⣾⣿⣿⡙⣽⢿⣽⣯⢺⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣶⣄⣿⡜⣼⣿⣿⣷⡷⣝⣼⣿⣯⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣵⢿⣿⣿⣿⣇⣷⣿⣿⣕⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣟⣦⣗⣟⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⡿⣻⣿⣿⣿⣿⣻⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣿⡝⣻⣿⠏⣩⡾⣿⣿⣿⣿⣿⣾⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣵⠟⢷⡲⢆⣿⣿⣿⣿⣿⣟⢤⣣⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡴⠋⠀⠀⠈⢷⣿⣿⣿⣿⡿⣿⡟⢞⣽⠋⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⠋⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⡇⡿⣟⡾⠁⠀⠀⠙⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠋⠀⠀⠀⠀⠀⠀⠀⠀⣯⣿⣿⣿⢋⣼⡾⠁⠀⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠠⣀⠀⢹⣿⣹⣿⡗⣼⢁⡤⠂⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠈⠣⣸⢲⣎⣍⣹⡷⠋⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣏⠉⢹⡏⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⠇⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡅⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣄⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⣸⠃⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢳⡀⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⠀⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+### NOW GO FUCK YOURSELF IF YOU CAN BE SO KIND! LOVE YA! 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VainBridge Cloud PC & Microsoft 365 - Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #1a1a1a;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slide-wrapper {
+            position: relative;
+            width: 90%;
+            max-width: 1400px;
+            height: 85vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .slide.active {
+            display: flex;
+        }
+        
+        .slide-image {
+            max-width: 100%;
+            max-height: 75%;
+            object-fit: contain;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .slide-caption {
+            text-align: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
+            border-radius: 15px;
+            max-width: 90%;
+            margin-top: 20px;
+        }
+        
+        .slide-caption h3 {
+            font-size: 28px;
+            color: #0078d4;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .slide-caption p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 120, 212, 0.9);
+            color: white;
+            border: none;
+            padding: 20px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .navigation:hover {
+            background: rgba(0, 90, 158, 1);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .navigation:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+        
+        .prev {
+            left: 30px;
+        }
+        
+        .next {
+            right: 30px;
+        }
+        
+        .slide-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 120, 212, 0.9);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+        
+        .header-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 50;
+        }
+        
+        .header-bar h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .header-bar .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .slide-indicators {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+        
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(0, 120, 212, 0.5);
+        }
+        
+        .indicator.active {
+            background: #0078d4;
+            border-color: #0078d4;
+            transform: scale(1.3);
+        }
+        
+        .keyboard-hint {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            z-index: 100;
+        }
+        
+        @media (max-width: 768px) {
+            .slide-wrapper {
+                width: 95%;
+                height: 90vh;
+            }
+            
+            .navigation {
+                padding: 15px 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .prev {
+                left: 10px;
+            }
+            
+            .next {
+                right: 10px;
+            }
+            
+            .slide-caption h3 {
+                font-size: 22px;
+            }
+            
+            .slide-caption p {
+                font-size: 16px;
+            }
+            
+            .header-bar h1 {
+                font-size: 18px;
+            }
+            
+            .header-bar .subtitle {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <div>
+            <h1>VainBridge Cloud PC & Microsoft 365</h1>
+            <div class="subtitle">Onboarding & Quickstart Presentation</div>
+        </div>
+        <div class="subtitle">Managed by CITRE</div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="slide-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (1).png" alt="Slide 1" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Welcome to VainBridge Cloud PC</h3>
+                    <p>Introduction to the Cloud PC onboarding process and Microsoft 365 services. Get started with your virtual desktop environment.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (2).png" alt="Slide 2" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Initial Setup Overview</h3>
+                    <p>Understanding the setup process and what to expect during your Cloud PC onboarding journey.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (3).png" alt="Slide 3" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Account Configuration</h3>
+                    <p>Setting up your account credentials and initial login procedures for accessing your Cloud PC.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (4).png" alt="Slide 4" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Multi-Factor Authentication (MFA)</h3>
+                    <p>Configuring MFA for enhanced security. Learn how to set up and use multi-factor authentication for your account.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (5).png" alt="Slide 5" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Accessing Your Cloud PC</h3>
+                    <p>Step-by-step guide to connecting to your Cloud PC desktop environment from any device.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (6).png" alt="Slide 6" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Microsoft 365 Applications</h3>
+                    <p>Overview of available Microsoft 365 applications including Outlook, Teams, SharePoint, and OneDrive.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 7 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (7).png" alt="Slide 7" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Office 365 E5 License Features</h3>
+                    <p>Comprehensive overview of Office 365 E5 license benefits including security, compliance, and productivity tools.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 8 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (8).png" alt="Slide 8" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Security & Compliance</h3>
+                    <p>Understanding the security features and compliance capabilities included with your Microsoft 365 subscription.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 9 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (9).png" alt="Slide 9" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Data Protection & Privacy</h3>
+                    <p>Learn about data protection measures, encryption, and privacy controls available in your Cloud PC environment.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 10 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (10).png" alt="Slide 10" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Multi-Tenant Architecture</h3>
+                    <p>Understanding Microsoft 365's multi-tenant architecture and how your data is isolated and secured.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 11 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (11).png" alt="Slide 11" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Tenant Isolation & Security</h3>
+                    <p>How Microsoft ensures complete data isolation between tenants while maintaining shared infrastructure efficiency.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 12 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (12).png" alt="Slide 12" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Data Residency & Location</h3>
+                    <p>Understanding where your data is stored and how data residency requirements are met for compliance.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 13 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (13).png" alt="Slide 13" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Shared Infrastructure</h3>
+                    <p>Overview of Microsoft's shared compute and storage infrastructure while maintaining logical isolation.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 14 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (14).png" alt="Slide 14" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Microsoft Global Network</h3>
+                    <p>How Microsoft's global network ensures optimal performance and security for all Cloud PC users worldwide.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 15 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (15).png" alt="Slide 15" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Service Components</h3>
+                    <p>Understanding the various Microsoft 365 service components and supporting Azure infrastructure.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 16 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (16).png" alt="Slide 16" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Related Services & Resources</h3>
+                    <p>Overview of additional Microsoft 365 services, advanced data residency options, and available resources.</p>
+                </div>
+            </div>
+            
+            <!-- Slide 17 -->
+            <div class="slide">
+                <img src="file:///C:/Users/MMARZ/Downloads/Slideshow Presentation/VanBridge (17).png" alt="Slide 17" class="slide-image">
+                <div class="slide-caption">
+                    <h3>Next Steps & Support</h3>
+                    <p>Final steps for completing your onboarding, accessing support resources, and getting the most out of your Cloud PC.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="navigation prev" onclick="changeSlide(-1)">❮</button>
+        <button class="navigation next" onclick="changeSlide(1)">❯</button>
+        
+        <div class="slide-indicators" id="indicators"></div>
+        
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">17</span>
+        </div>
+        
+        <div class="keyboard-hint">
+            Use ← → arrow keys or click buttons to navigate
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        // Update total slides counter
+        document.getElementById('total-slides').textContent = totalSlides;
+        
+        // Create indicators
+        const indicatorsContainer = document.getElementById('indicators');
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.className = 'indicator' + (i === 0 ? ' active' : '');
+            indicator.onclick = () => goToSlide(i);
+            indicatorsContainer.appendChild(indicator);
+        }
+        
+        function showSlide(n) {
+            if (n >= totalSlides) {
+                currentSlide = 0;
+            } else if (n < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = n;
+            }
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            // Show current slide
+            slides[currentSlide].classList.add('active');
+            
+            // Update counter
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+            
+            // Update indicators
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((ind, idx) => {
+                if (idx === currentSlide) {
+                    ind.classList.add('active');
+                } else {
+                    ind.classList.remove('active');
+                }
+            });
+        }
+        
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+        
+        function goToSlide(n) {
+            showSlide(n);
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeSlide(1);
+            } else if (e.key === 'Home') {
+                goToSlide(0);
+            } else if (e.key === 'End') {
+                goToSlide(totalSlides - 1);
+            }
+        });
+        
+        // Auto-play option (commented out by default)
+        // let autoPlayInterval;
+        // function startAutoPlay() {
+        //     autoPlayInterval = setInterval(() => {
+        //         changeSlide(1);
+        //     }, 5000); // Change slide every 5 seconds
+        // }
+        // function stopAutoPlay() {
+        //     clearInterval(autoPlayInterval);
+        // }
+        // startAutoPlay();
+        
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>
+
